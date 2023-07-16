@@ -7,7 +7,7 @@ KERNEL_SRC:=os_core.c  os_flag.c  os_mem.c    os_q.c    os_task.c  os_tmr.c\
 SRC += $(KERNEL_SRC:%.c=UCOSII/src/%.c)
 # SRC += $(KERNEL_SRC:%.c=Source/%.c)
 
-SRC += test/hello_ucosii.c
+SRC += hello_ucosii.c
 
 OBJ := $(SRC:%.c=build/%.o)
 
@@ -20,7 +20,7 @@ LINK_FLAG := -g
 ECHO := echo
 MKDIR := mkdir -p
 
-MINGW_LIB:=/mingw64/x86_64-w64-mingw32/lib
+MINGW_LIB:=C:/mingw64/x86_64-w64-mingw32/lib
 LIB:=$(MINGW_LIB)/libwinmm.a 
 
 define compile_c

@@ -12,8 +12,8 @@ Ensure has libwinmm.a if using compiler gcc
 
 # Build test
 ```
-make clean
-make all
+mingw32-make.exe clean
+mingw32-make.exe all
 ```
 
 # Run test
